@@ -1,8 +1,1 @@
-`use strict`;
-
-function slugify(title) {
-    let lowerCaseString = title.toLowerCase();
-    let array = lowerCaseString.split(" ");
-    let slug = array.join("-");
-    return slug;
-}
+function isEnoughCapacity(products, containerSize) { let summProducts = 0; for (const product in products) { summProducts += products[product]; } return summProducts <= containerSize; }
